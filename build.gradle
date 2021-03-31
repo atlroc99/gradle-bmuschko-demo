@@ -70,3 +70,7 @@ task buildImage(type: DockerBuildImage) {
     dependsOn 'createDockerfile'
     images.add('atlroc99/demo:latest')
 }
+
+def printVersionID(versionId) {
+    println "version ID: $versionId"
+}
